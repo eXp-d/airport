@@ -1,0 +1,143 @@
+airports:
+- icao: EFHK
+  latitude: 60.318363
+  longitude: 24.963341
+  status: open
+  type: large_airport
+  country: Finland
+  elevation_ft: 179
+  timezone: '+3'
+  runways_count: 3
+  runways:
+  - id: 04L-22R
+    length_ft: 10039
+    surface: asphalt
+  - id: 04R-22L
+    length_ft: 11483
+    surface: asphalt
+  - id: 15-33
+    length_ft: 9518
+    surface: asphalt
+- icao: EFOU
+  latitude: 64.930099
+  longitude: 25.354601
+  status: open
+  type: large_airport
+  country: Finland
+  elevation_ft: 47
+  timezone: '+3'
+  runways_count: 1
+  runways:
+  - id: 12-30
+    length_ft: 8205
+    surface: asphalt
+- icao: EFRO
+  latitude: 66.563327
+  longitude: 25.829751
+  status: open
+  type: large_airport
+  country: Finland
+  elevation_ft: 642
+  timezone: '+3'
+  runways_count: 1
+  runways:
+  - id: 03-21
+    length_ft: 9849
+    surface: asphalt
+- icao: EFTP
+  latitude: 61.414101
+  longitude: 23.604401
+  status: open
+  type: large_airport
+  country: Finland
+  elevation_ft: 390
+  timezone: '+3'
+  runways_count: 1
+  runways:
+  - id: 06-24
+    length_ft: 8858
+    surface: asphalt
+- icao: EFTU
+  latitude: 60.514099
+  longitude: 22.2628
+  status: open
+  type: large_airport
+  country: Finland
+  elevation_ft: 161
+  timezone: '+3'
+  runways_count: 1
+  runways:
+  - id: 08-26
+    length_ft: 8202
+    surface: asphalt
+- icao: EFIV
+  latitude: 68.6073
+  longitude: 27.4053
+  status: open
+  type: large_airport
+  country: Finland
+  elevation_ft: 481
+  timezone: '+3'
+  runways_count: 2
+  runways:
+  - id: 04-22
+    length_ft: 8199
+    surface: asphalt
+  - id: 08-26
+    length_ft: 2625
+    surface: asphalt
+- icao: EFKT
+  latitude: 67.700996
+  longitude: 24.8468
+  status: open
+  type: large_airport
+  country: Finland
+  elevation_ft: 644
+  timezone: '+3'
+  runways_count: 1
+  runways:
+  - id: 16-34
+    length_ft: 8202
+    surface: asphalt
+- icao: EFVA
+  latitude: 63.05023
+  longitude: 21.762543
+  status: open
+  type: large_airport
+  country: Finland
+  elevation_ft: 19
+  timezone: '+3'
+  runways_count: 1
+  runways:
+  - id: 16-34
+    length_ft: 8727
+    surface: asphalt
+- icao: EFJO
+  latitude: 62.658815
+  longitude: 29.619398
+  status: open
+  type: medium_airport
+  country: Finland
+  elevation_ft: 398
+  timezone: '+3'
+  runways_count: 2
+  runways:
+  - id: 10-28
+    length_ft: 8202
+    surface: asphalt
+  - id: 17-35
+    length_ft: 3937
+    surface: COM
+- icao: EFMA
+  latitude: 60.1222
+  longitude: 19.898199
+  status: open
+  type: medium_airport
+  country: Finland
+  elevation_ft: 17
+  timezone: '+3'
+  runways_count: 1
+  runways:
+  - id: 03-21
+    length_ft: 6243
+    surface: asphalt

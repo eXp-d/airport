@@ -1,0 +1,11 @@
+icao,latitude,longitude,status,type,country,elevation_ft,timezone,runways_count
+EFHK,60.318363,24.963341,open,large_airport,Finland,179,+3,3
+EFOU,64.930099,25.354601,open,large_airport,Finland,47,+3,1
+EFRO,66.563327,25.829751,open,large_airport,Finland,642,+3,1
+EFTP,61.414101,23.604401,open,large_airport,Finland,390,+3,1
+EFTU,60.514099,22.2628,open,large_airport,Finland,161,+3,1
+EFIV,68.6073,27.4053,open,large_airport,Finland,481,+3,2
+EFKT,67.700996,24.8468,open,large_airport,Finland,644,+3,1
+EFVA,63.05023,21.762543,open,large_airport,Finland,19,+3,1
+EFJO,62.658815,29.619398,open,medium_airport,Finland,398,+3,2
+EFMA,60.1222,19.898199,open,medium_airport,Finland,17,+3,1

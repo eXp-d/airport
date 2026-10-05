@@ -58,10 +58,8 @@ def main():
         if lat is None or lon is None:
             continue
 
-        # ICAO: отдельная колонка, иначе gps_code, иначе внутренний ident
         icao = a.get("icao_code") or a.get("gps_code") or a["ident"]
 
-        # Часовой пояс: целое смещение от UTC, например +3
         tz_name = tf.timezone_at(lat=lat, lng=lon)
         tz = None
         if tz_name:
