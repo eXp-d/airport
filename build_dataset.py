@@ -1,14 +1,3 @@
-"""Собирает датасет аэропортов мира из открытых данных OurAirports.
-
-Выход (папка output/):
-  airports.csv  - по строке на аэропорт
-  runways.csv   - по строке на ВПП (связь по icao)
-  airports.json - вложенный формат: аэропорт + список ВПП
-
-Запуск:
-  pip install timezonefinder
-  python build_dataset.py
-"""
 import csv
 import json
 import urllib.request
@@ -24,7 +13,6 @@ OUT_DIR = Path("output")
 
 
 def read_csv(name):
-    """Скачивает файл (с кэшем в data/) и читает его как список словарей."""
     DATA_DIR.mkdir(exist_ok=True)
     path = DATA_DIR / name
     if not path.exists():
@@ -54,7 +42,6 @@ def main():
     tf = TimezoneFinder()
     now = datetime.now()
 
-    # ВПП, сгруппированные по ident аэропорта
     runways_by_airport = {}
     for r in runways_raw:
         runways_by_airport.setdefault(r["airport_ident"], []).append({
