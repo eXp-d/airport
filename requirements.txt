@@ -1,1 +1,5 @@
+selenium
+beautifulsoup4
 timezonefinder
+pyyaml
+tomli-w
