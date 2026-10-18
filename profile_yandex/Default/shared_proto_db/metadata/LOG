@@ -1,0 +1,7 @@
+2026/10/18-12:31:31.965 3494 File C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\shared_proto_db\metadata is locked for recovering successfully
+2026/10/18-12:31:31.965 3494 Reusing MANIFEST C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\shared_proto_db\metadata/MANIFEST-000001
+2026/10/18-12:31:31.966 3494 Recovering log #3
+2026/10/18-12:31:31.966 3494 Reusing old log C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\shared_proto_db\metadata/000003.log 
+2026/10/18-12:31:46.843 3e18 Deletion DBImpl for C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\shared_proto_db\metadata, waiting for background work finished
+2026/10/18-12:31:46.843 3e18 Deletion DBImpl for C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\shared_proto_db\metadata, background work finished
+2026/10/18-12:31:46.846 3e18 File C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\shared_proto_db\metadata unlocked successfully

@@ -1,0 +1,7 @@
+2026/10/18-12:25:22.522 3f78 File C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Session Storage is locked for recovering successfully
+2026/10/18-12:25:22.526 3f78 Reusing MANIFEST C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Session Storage/MANIFEST-000001
+2026/10/18-12:25:22.528 3f78 Recovering log #3
+2026/10/18-12:25:22.530 3f78 Reusing old log C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Session Storage/000003.log 
+2026/10/18-12:25:31.093 3f78 Deletion DBImpl for C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Session Storage, waiting for background work finished
+2026/10/18-12:25:31.093 3f78 Deletion DBImpl for C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Session Storage, background work finished
+2026/10/18-12:25:31.146 3f78 File C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Session Storage unlocked successfully

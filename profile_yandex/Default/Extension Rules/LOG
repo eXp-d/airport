@@ -1,0 +1,6 @@
+2026/10/18-12:18:26.562 3f7c File C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Extension Rules is locked for recovering successfully
+2026/10/18-12:18:26.562 3f7c Creating DB C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Extension Rules since it was missing.
+2026/10/18-12:18:26.616 3f7c Reusing MANIFEST C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Extension Rules/MANIFEST-000001
+2026/10/18-12:21:46.001 3bf0 Deletion DBImpl for C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Extension Rules, waiting for background work finished
+2026/10/18-12:21:46.001 3bf0 Deletion DBImpl for C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Extension Rules, background work finished
+2026/10/18-12:21:46.003 3bf0 File C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Extension Rules unlocked successfully

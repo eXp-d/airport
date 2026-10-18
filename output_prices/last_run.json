@@ -1,0 +1,38 @@
+{
+  "milk": {
+    "group": "milk",
+    "title": "Молоко Село Зеленое пастеризованное 3.2% БЗМЖ 1.947л",
+    "price_shelf": 209.99,
+    "candidates": [
+      209.99
+    ],
+    "source": "json-ld",
+    "amount": 1.947,
+    "base_unit": "л",
+    "price_per_unit": 107.85
+  },
+  "chicken": {
+    "group": "chicken",
+    "title": "Филе грудки цыплёнка Петелинка охлаждённое",
+    "price_shelf": 549.99,
+    "candidates": [
+      549.99
+    ],
+    "source": "json-ld",
+    "amount": 1.0,
+    "base_unit": "кг",
+    "price_per_unit": 549.99
+  },
+  "rice": {
+    "group": "rice",
+    "title": "Рис Global Village Басмати шлифованный 450г",
+    "price_shelf": 164.99,
+    "candidates": [
+      164.99
+    ],
+    "source": "json-ld",
+    "amount": 0.45,
+    "base_unit": "кг",
+    "price_per_unit": 366.64
+  }
+}

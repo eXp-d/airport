@@ -3,3 +3,4 @@ __pycache__/
 chrome_profile/
 output_prices/debug/
 saved_pages/
+output_prices/prices_old_*.csv

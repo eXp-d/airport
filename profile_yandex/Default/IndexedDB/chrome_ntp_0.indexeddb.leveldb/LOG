@@ -1,0 +1,6 @@
+2026/10/18-12:19:07.763 1b14 File C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\chrome_ntp_0.indexeddb.leveldb is locked for recovering successfully
+2026/10/18-12:19:07.763 1b14 Creating DB C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\chrome_ntp_0.indexeddb.leveldb since it was missing.
+2026/10/18-12:19:07.810 1b14 Reusing MANIFEST C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\chrome_ntp_0.indexeddb.leveldb/MANIFEST-000001
+2026/10/18-12:21:46.004 3d50 Deletion DBImpl for C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\chrome_ntp_0.indexeddb.leveldb, waiting for background work finished
+2026/10/18-12:21:46.013 3d50 Deletion DBImpl for C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\chrome_ntp_0.indexeddb.leveldb, background work finished
+2026/10/18-12:21:46.013 3d50 File C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\chrome_ntp_0.indexeddb.leveldb unlocked successfully

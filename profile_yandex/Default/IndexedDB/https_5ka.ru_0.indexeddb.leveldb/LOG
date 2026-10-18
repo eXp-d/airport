@@ -1,0 +1,7 @@
+2026/10/18-12:31:33.267 3e18 File C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\https_5ka.ru_0.indexeddb.leveldb is locked for recovering successfully
+2026/10/18-12:31:33.268 3e18 Reusing MANIFEST C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\https_5ka.ru_0.indexeddb.leveldb/MANIFEST-000001
+2026/10/18-12:31:33.268 3e18 Recovering log #6
+2026/10/18-12:31:33.268 3e18 Reusing old log C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\https_5ka.ru_0.indexeddb.leveldb/000006.log 
+2026/10/18-12:31:45.632 ea0 Deletion DBImpl for C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\https_5ka.ru_0.indexeddb.leveldb, waiting for background work finished
+2026/10/18-12:31:46.737 ea0 Deletion DBImpl for C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\https_5ka.ru_0.indexeddb.leveldb, background work finished
+2026/10/18-12:31:46.737 ea0 File C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\https_5ka.ru_0.indexeddb.leveldb unlocked successfully

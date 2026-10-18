@@ -1,0 +1,7 @@
+2026/10/18-12:25:22.354 3ac8 File C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Service Worker\Database is locked for recovering successfully
+2026/10/18-12:25:22.355 3ac8 Reusing MANIFEST C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Service Worker\Database/MANIFEST-000001
+2026/10/18-12:25:22.356 3ac8 Recovering log #3
+2026/10/18-12:25:22.356 3ac8 Reusing old log C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Service Worker\Database/000003.log 
+2026/10/18-12:25:31.084 3f80 Deletion DBImpl for C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Service Worker\Database, waiting for background work finished
+2026/10/18-12:25:31.084 3f80 Deletion DBImpl for C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Service Worker\Database, background work finished
+2026/10/18-12:25:31.151 3f80 File C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Service Worker\Database unlocked successfully

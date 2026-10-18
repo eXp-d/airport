@@ -13,6 +13,7 @@
 
 Команды:
   python scrape_prices.py --setup   # один раз: выбрать город/магазин на сайте
+  (добавьте --browser yandex, чтобы работать через Яндекс Браузер)
   python scrape_prices.py --visible # тестовый запуск с видимым браузером
   python scrape_prices.py           # обычный (рабочий) запуск без окна
 """
@@ -20,6 +21,7 @@
 import argparse
 import csv
 import json
+import os
 import re
 import time
 import tomllib                      # чтение toml (встроено в Python 3.11+)
@@ -29,15 +31,25 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 
 # ----------------------------- НАСТРОЙКИ -----------------------------
 CONFIG = Path("products.toml")
 OUT_DIR = Path("output_prices")
-PROFILE_DIR = Path("chrome_profile")   # тут браузер помнит выбранный магазин
+PROFILE_BASE = "profile"               # тут браузер помнит выбранный магазин (profile_chrome, profile_yandex)
+# Яндекс Браузер: путь к программе и к драйверу yandexdriver.exe (лежит в папке проекта)
+YANDEX_PATHS = [
+    r"C:\Program Files\Yandex\YandexBrowser\Application\browser.exe",
+    r"C:\Program Files (x86)\Yandex\YandexBrowser\Application\browser.exe",
+    os.path.expandvars(r"%LOCALAPPDATA%\Yandex\YandexBrowser\Application\browser.exe"),
+]
+# берём первый путь, по которому реально лежит браузер
+YANDEX_BROWSER = next((p for p in YANDEX_PATHS if os.path.exists(p)), YANDEX_PATHS[0])
+YANDEX_DRIVER = Path("yandexdriver.exe")
 DEBUG_DIR = OUT_DIR / "debug"
 PAUSE = 3.0                            # пауза между страницами (секунды)
-START_URL = "https://lenta.com/"
+START_URL = "https://www.perekrestok.ru/"
 
 # единицы измерения: название -> (базовая единица, множитель до базовой)
 UNITS = {
@@ -63,14 +75,21 @@ def load_config(path):
 
 
 # ------------------------- ЧАСТЬ 2. БРАУЗЕР --------------------------
-def make_driver(headless):
+def make_driver(headless, browser="chrome"):
+    """browser: 'chrome' или 'yandex'."""
     opts = Options()
-    opts.add_argument(f"--user-data-dir={PROFILE_DIR.resolve()}")
+    profile = Path(f"{PROFILE_BASE}_{browser}")
+    opts.add_argument(f"--user-data-dir={profile.resolve()}")
     opts.add_argument("--window-size=1366,900")
     opts.add_argument("--lang=ru-RU")
     opts.add_argument("--log-level=3")
     if headless:
         opts.add_argument("--headless=new")
+    if browser == "yandex":
+        if not YANDEX_DRIVER.exists():
+            raise SystemExit("Не найден yandexdriver.exe в папке проекта (см. инструкцию)")
+        opts.binary_location = YANDEX_BROWSER      # запускаем Яндекс Браузер
+        return webdriver.Chrome(service=Service(str(YANDEX_DRIVER)), options=opts)
     return webdriver.Chrome(options=opts)
 
 
@@ -106,6 +125,19 @@ def to_price(text):
         return float(str(text).replace("\xa0", "").replace(" ", "").replace(",", "."))
     except ValueError:
         return None
+
+
+def find_text_prices(chunk):
+    """Находит цены в куске текста регулярными выражениями."""
+    found = []
+    # формат "131 59 ₽": рубли и копейки через пробел
+    for m in re.finditer(r"(\d{1,3}(?: \d{3})*) (\d{2}) ?₽", chunk):
+        found.append(to_price(m.group(1)) + int(m.group(2)) / 100)
+    # формат "89,99 ₽" или "89.99 руб"
+    if not found:
+        for m in re.finditer(r"(\d{1,3}(?: \d{3})*[.,]\d{2}) ?(?:₽|руб)", chunk):
+            found.append(to_price(m.group(1)))
+    return found
 
 
 def extract_prices(html):
@@ -144,14 +176,18 @@ def extract_prices(html):
 
     # 3) видимый текст
     text = re.sub(r"\s+", " ", soup.get_text(" "))
+    # Цена основного товара стоит рядом с заголовком. Сначала ищем в куске текста
+    # сразу после заголовка (800 символов), чтобы не схватить цены из блока
+    # "Похожие товары". Если там пусто - ищем по всей странице.
+    title_norm = re.sub(r"\s+", " ", title)
+    pos = text.find(title_norm) if title_norm else -1
+    chunks = [text[pos: pos + 800]] if pos >= 0 else []
+    chunks.append(text)
     found = []
-    # формат "131 59 ₽": рубли и копейки через пробел
-    for m in re.finditer(r"(\d{1,3}(?: \d{3})*) (\d{2}) ?₽", text):
-        found.append(to_price(m.group(1)) + int(m.group(2)) / 100)
-    # формат "89,99 руб" или "89.99 ₽"
-    if not found:
-        for m in re.finditer(r"(\d{1,3}(?: \d{3})*[.,]\d{2}) ?(?:₽|руб)", text):
-            found.append(to_price(m.group(1)))
+    for chunk in chunks:
+        found = find_text_prices(chunk)
+        if found:
+            break
     return title, found, "text"
 
 
@@ -239,15 +275,17 @@ def main():
     ap.add_argument("--setup", action="store_true",
                     help="открыть сайт, чтобы один раз выбрать город и магазин")
     ap.add_argument("--visible", action="store_true", help="показывать окно браузера")
+    ap.add_argument("--browser", choices=["chrome", "yandex"], default="chrome",
+                    help="каким браузером собирать цены")
     ap.add_argument("--config", default=str(CONFIG), help="файл со списком товаров")
     args = ap.parse_args()
 
     if args.setup:
-        driver = make_driver(headless=False)
+        driver = make_driver(headless=False, browser=args.browser)
         driver.get(START_URL)
         input("Выберите город/магазин на сайте, затем нажмите Enter здесь...")
         driver.quit()
-        print("Готово: выбор сохранён в папке chrome_profile/")
+        print(f"Готово: выбор сохранён в папке {PROFILE_BASE}_{args.browser}/")
         return
 
     settings, items = load_config(args.config)
@@ -259,7 +297,7 @@ def main():
     lo, hi = limit * (1 - tol), limit * (1 + tol)
     print(f"Лимит корзины: {limit:.0f} ₽ (допустимо {lo:.0f}-{hi:.0f} ₽)")
 
-    driver = make_driver(headless=not args.visible)
+    driver = make_driver(headless=not args.visible, browser=args.browser)
     results = {}
     try:
         for i, item in enumerate(items, 1):

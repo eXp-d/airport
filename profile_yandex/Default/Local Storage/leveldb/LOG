@@ -1,0 +1,7 @@
+2026/10/18-12:31:31.915 3948 File C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Local Storage\leveldb is locked for recovering successfully
+2026/10/18-12:31:31.922 3948 Reusing MANIFEST C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Local Storage\leveldb/MANIFEST-000001
+2026/10/18-12:31:31.923 3948 Recovering log #3
+2026/10/18-12:31:31.926 3948 Reusing old log C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Local Storage\leveldb/000003.log 
+2026/10/18-12:31:45.631 1580 Deletion DBImpl for C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Local Storage\leveldb, waiting for background work finished
+2026/10/18-12:31:45.631 1580 Deletion DBImpl for C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Local Storage\leveldb, background work finished
+2026/10/18-12:31:46.739 1580 File C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Local Storage\leveldb unlocked successfully

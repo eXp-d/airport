@@ -1,0 +1,45 @@
+
+2026-10-18 09:18:26.605 [0] InitSessionLog done
+2026-10-18 09:18:26.605 [0] ReadLastSessionCommands
+2026-10-18 09:18:26.605 [0]   Initial SessionState
+2026-10-18 09:18:26.605 [1]   Init
+2026-10-18 09:18:26.605 [0]   Init done
+2026-10-18 09:18:26.605 [0]   ReadCommandsFromFile
+2026-10-18 09:18:26.605 [0] ReadLastSessionCommands done
+2026-10-18 09:19:09.794 [5] AppendCommandsWithReset
+2026-10-18 09:19:09.794 [0] TruncateOrOpenFile
+2026-10-18 09:19:09.794 [0] OpenAndWriteHeader
+2026-10-18 09:19:09.794 [0] OpenAndWriteHeader done
+2026-10-18 09:19:09.794 [0] TruncateOrOpenFile done
+2026-10-18 09:21:45.990 [0] CommandStorageBackend done
+2026-10-18 09:25:22.417 [0] InitSessionLog done
+2026-10-18 09:25:22.417 [0] ReadLastSessionCommands
+2026-10-18 09:25:22.417 [2]   SessionState (1)
+2026-10-18 09:25:22.417 [0]     13436788749794537: 1
+2026-10-18 09:25:22.417 [1]   Init
+2026-10-18 09:25:22.417 [0]   Init done
+2026-10-18 09:25:22.417 [0]   ReadCommandsFromFile
+2026-10-18 09:25:22.417 [1]   ReadCommandsFromFile done: 1 (5)
+2026-10-18 09:25:22.418 [0] ReadLastSessionCommands done
+2026-10-18 09:25:31.089 [5] AppendCommandsWithReset
+2026-10-18 09:25:31.089 [0] TruncateOrOpenFile
+2026-10-18 09:25:31.089 [0] OpenAndWriteHeader
+2026-10-18 09:25:31.089 [0] OpenAndWriteHeader done
+2026-10-18 09:25:31.089 [0] TruncateOrOpenFile done
+2026-10-18 09:25:31.158 [0] CommandStorageBackend done
+2026-10-18 09:31:31.964 [0] InitSessionLog done
+2026-10-18 09:31:31.964 [0] ReadLastSessionCommands
+2026-10-18 09:31:31.964 [3]   SessionState (2)
+2026-10-18 09:31:31.964 [0]     13436789131089641: 1
+2026-10-18 09:31:31.964 [0]     13436788749794537: 1
+2026-10-18 09:31:31.964 [1]   Init
+2026-10-18 09:31:31.965 [0]   Init done
+2026-10-18 09:31:31.965 [0]   ReadCommandsFromFile
+2026-10-18 09:31:31.965 [1]   ReadCommandsFromFile done: 1 (5)
+2026-10-18 09:31:31.965 [0] ReadLastSessionCommands done
+2026-10-18 09:31:40.622 [5] AppendCommandsWithReset
+2026-10-18 09:31:40.622 [0] TruncateOrOpenFile
+2026-10-18 09:31:40.622 [0] OpenAndWriteHeader
+2026-10-18 09:31:40.641 [0] OpenAndWriteHeader done
+2026-10-18 09:31:40.641 [0] TruncateOrOpenFile done
+2026-10-18 09:31:45.631 [0] CommandStorageBackend done

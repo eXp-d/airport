@@ -1,0 +1,7 @@
+2026/10/18-12:25:22.357 13b0 File C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Site Characteristics Database is locked for recovering successfully
+2026/10/18-12:25:22.358 13b0 Reusing MANIFEST C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Site Characteristics Database/MANIFEST-000001
+2026/10/18-12:25:22.358 13b0 Recovering log #3
+2026/10/18-12:25:22.358 13b0 Reusing old log C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Site Characteristics Database/000003.log 
+2026/10/18-12:25:31.090 11c8 Deletion DBImpl for C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Site Characteristics Database, waiting for background work finished
+2026/10/18-12:25:31.145 11c8 Deletion DBImpl for C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Site Characteristics Database, background work finished
+2026/10/18-12:25:31.145 11c8 File C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Site Characteristics Database unlocked successfully

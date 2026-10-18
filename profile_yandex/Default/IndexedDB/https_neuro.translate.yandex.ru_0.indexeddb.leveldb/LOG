@@ -1,0 +1,6 @@
+2026/10/18-12:19:08.352 3e6c File C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\https_neuro.translate.yandex.ru_0.indexeddb.leveldb is locked for recovering successfully
+2026/10/18-12:19:08.352 3e6c Creating DB C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\https_neuro.translate.yandex.ru_0.indexeddb.leveldb since it was missing.
+2026/10/18-12:19:08.374 3e6c Reusing MANIFEST C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\https_neuro.translate.yandex.ru_0.indexeddb.leveldb/MANIFEST-000001
+2026/10/18-12:21:46.004 3a4 Deletion DBImpl for C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\https_neuro.translate.yandex.ru_0.indexeddb.leveldb, waiting for background work finished
+2026/10/18-12:21:46.013 3a4 Deletion DBImpl for C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\https_neuro.translate.yandex.ru_0.indexeddb.leveldb, background work finished
+2026/10/18-12:21:46.013 3a4 File C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\https_neuro.translate.yandex.ru_0.indexeddb.leveldb unlocked successfully

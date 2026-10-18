@@ -1,0 +1,6 @@
+2026/10/18-12:18:26.617 3f7c File C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Extension Scripts is locked for recovering successfully
+2026/10/18-12:18:26.617 3f7c Creating DB C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Extension Scripts since it was missing.
+2026/10/18-12:18:26.685 3f7c Reusing MANIFEST C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Extension Scripts/MANIFEST-000001
+2026/10/18-12:21:45.988 1b14 Deletion DBImpl for C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Extension Scripts, waiting for background work finished
+2026/10/18-12:21:45.988 1b14 Deletion DBImpl for C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Extension Scripts, background work finished
+2026/10/18-12:21:46.000 1b14 File C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\Extension Scripts unlocked successfully

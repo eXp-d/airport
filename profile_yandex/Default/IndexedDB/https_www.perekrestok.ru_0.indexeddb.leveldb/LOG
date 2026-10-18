@@ -1,0 +1,6 @@
+2026/10/18-12:18:31.429 3f7c File C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\https_www.perekrestok.ru_0.indexeddb.leveldb is locked for recovering successfully
+2026/10/18-12:18:31.430 3f7c Creating DB C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\https_www.perekrestok.ru_0.indexeddb.leveldb since it was missing.
+2026/10/18-12:18:31.473 3f7c Reusing MANIFEST C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\https_www.perekrestok.ru_0.indexeddb.leveldb/MANIFEST-000001
+2026/10/18-12:18:33.622 3f7c Deletion DBImpl for C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\https_www.perekrestok.ru_0.indexeddb.leveldb, waiting for background work finished
+2026/10/18-12:18:33.649 3f7c Deletion DBImpl for C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\https_www.perekrestok.ru_0.indexeddb.leveldb, background work finished
+2026/10/18-12:18:33.650 3f7c File C:\Users\Даниил\Desktop\мти\аэропорты\profile_yandex\Default\IndexedDB\https_www.perekrestok.ru_0.indexeddb.leveldb unlocked successfully
